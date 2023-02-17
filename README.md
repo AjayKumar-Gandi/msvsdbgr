@@ -26,7 +26,7 @@ This github repository is for the design of a Band Gap Reference Circuit (BGR)
 ### CTAT and PTAT cancelling each other to maintain voltage unchanged with respect to temperature
 ![Screenshot from 2023-02-16 21-16-43](https://user-images.githubusercontent.com/110395336/219571021-c8bedc9c-a021-4212-a437-855de57815ae.png)
 ![Screenshot from 2023-02-16 21-17-05](https://user-images.githubusercontent.com/110395336/219571053-be63ac6e-b7fd-4c96-bd65-9b5802e4f8ad.png)
-### Building a start up circuit to keep current mirror in aactive state
+### Building a start up circuit to keep current mirror in active state
 ![Screenshot from 2023-02-16 22-29-40](https://user-images.githubusercontent.com/110395336/219571444-dd578eee-23dc-4bfa-9e04-b1c8eebc9ef1.png)
 ### Temperature coeffecient
 ![Screenshot from 2023-02-16 23-02-55](https://user-images.githubusercontent.com/110395336/219571528-bb2c1857-88e9-4552-b025-795827dd8ba5.png)
