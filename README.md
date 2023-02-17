@@ -1,27 +1,45 @@
 # msvsdbgr
 This github repository is for the design of a Band Gap Reference Circuit (BGR)
+
+## CTAT
+![Screenshot from 2023-02-16 11-50-54](https://user-images.githubusercontent.com/110395336/219567226-2ffe197c-dde9-4366-bf4f-f0e3fdaeb496.png)
+### Voltage variation w.r.to temperature
+![Screenshot from 2023-02-16 11-44-13](https://user-images.githubusercontent.com/110395336/219567666-87c50116-048f-4ace-9f7c-836a0ce38c26.png)
+### Slope of the Curve
+![Screenshot from 2023-02-16 11-49-05](https://user-images.githubusercontent.com/110395336/219568214-1b8ed17f-cdf1-447f-b81c-4c7d825e4469.png)
+### Function of CTAT using basic current mirror circuit
+![Screenshot from 2023-02-16 17-54-39](https://user-images.githubusercontent.com/110395336/219568471-1c4d1311-f62f-4370-84fd-12b423892318.png)
+### Voltages at specified nodes
+![Screenshot from 2023-02-16 18-32-48](https://user-images.githubusercontent.com/110395336/219569518-8334296d-4fc3-4b4d-a558-8a0d21ad1a74.png)
+
+### Current and voltages are almost identical
+![Screenshot from 2023-02-16 18-30-36](https://user-images.githubusercontent.com/110395336/219568660-ae96dfca-46f5-4547-8f45-985732404bcc.png)
+## PTAT
+### PTAT using V2 and VD dependent
+![Screenshot from 2023-02-16 18-43-13](https://user-images.githubusercontent.com/110395336/219569989-8c5ec124-619d-439e-948c-584485e22211.png)
+### Realising PTAT independently
+![Screenshot from 2023-02-16 18-44-45](https://user-images.githubusercontent.com/110395336/219570200-7649423a-16a9-462a-bfd7-0b3611bcc120.png)
+### Voltage variation w.r.to temperature
+![Screenshot from 2023-02-16 18-44-40](https://user-images.githubusercontent.com/110395336/219570326-ee6e5f52-a74a-4f53-8f07-6c7a86dc6ab9.png)
+## BGR Vref
+![Screenshot from 2023-02-16 22-13-20](https://user-images.githubusercontent.com/110395336/219570854-853a12de-ec89-4ec6-ace7-29cf4e954ff5.png)
+### CTAT and PTAT cancelling each other to maintain voltage unchanged with respect to temperature
+![Screenshot from 2023-02-16 21-16-43](https://user-images.githubusercontent.com/110395336/219571021-c8bedc9c-a021-4212-a437-855de57815ae.png)
+![Screenshot from 2023-02-16 21-17-05](https://user-images.githubusercontent.com/110395336/219571053-be63ac6e-b7fd-4c96-bd65-9b5802e4f8ad.png)
+### Building a start up circuit to keep current mirror in aactive state
+![Screenshot from 2023-02-16 22-29-40](https://user-images.githubusercontent.com/110395336/219571444-dd578eee-23dc-4bfa-9e04-b1c8eebc9ef1.png)
+### Temperature coeffecient
+![Screenshot from 2023-02-16 23-02-55](https://user-images.githubusercontent.com/110395336/219571528-bb2c1857-88e9-4552-b025-795827dd8ba5.png)
+### Voltage coeffecient
+![Screenshot from 2023-02-16 23-25-56](https://user-images.githubusercontent.com/110395336/219571578-ba3cd981-8cc0-448b-b79c-59b129a5a349.png)
+
+
+
 ## BGR Circuit
 ![image](https://user-images.githubusercontent.com/110395336/217156197-c168f612-c3e4-4d4c-894c-5d401b23509f.png)
 
-![image](https://user-images.githubusercontent.com/110395336/217156276-667c3476-2600-4ddf-9303-0101e73f3f12.png)
 
-## Vbgp v/s VDD [ 2v to 4v] @ RL = 100M ohms plot
-![Screenshot from 2023-02-13 23-52-42](https://user-images.githubusercontent.com/110395336/218639992-bcb90440-2b04-4490-9903-9adf62d656a9.png)
-## CTAT Voltage generation with Multiple BJT
-![Screenshot from 2023-02-13 22-26-52](https://user-images.githubusercontent.com/110395336/218639173-b767bd0f-edd8-4d01-bb25-0b650dbb6fa0.png)
-## PTAT Voltage generation 
-### voltgae difference between the two terminals of the resistnce, which will give us a slightly PTAT voltage.
-![Screenshot from 2023-02-13 23-23-32](https://user-images.githubusercontent.com/110395336/218639152-4a825e7f-c814-4cce-a2d8-5f0403c17380.png)
-## PTAT Voltage generation with VCVS
-### In this simulation we will check the amplified PTAT voltage using one VCVS.
-![Screenshot from 2023-02-13 23-31-25](https://user-images.githubusercontent.com/110395336/218639137-f02be2ce-d5f1-4e0d-8c00-027f2669c579.png)
-## Vbgp voltage varying R1 and R2(parametric analysis) Vbgp vs temperature(-100C to 300C)
-![Screenshot from 2023-02-14 00-50-05](https://user-images.githubusercontent.com/110395336/218639031-74ce3bcc-16d9-4e32-b846-8b3329a43c30.png)
-### current from CMR circuit
-![Screenshot from 2023-02-13 22-49-16](https://user-images.githubusercontent.com/110395336/218639164-733bc54a-6128-4369-8615-592406833c7a.png)
 
-### Expected Vbgp vs temperature graph
-![image](https://user-images.githubusercontent.com/110395336/218641985-db542791-e2c4-4e55-a3ff-6093c27f9c7c.png)
 
 
 
