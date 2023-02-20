@@ -34,10 +34,11 @@ This github repository is for the design of a Band Gap Reference Circuit (BGR)
 ![Screenshot from 2023-02-16 23-25-56](https://user-images.githubusercontent.com/110395336/219571578-ba3cd981-8cc0-448b-b79c-59b129a5a349.png)
 
 
-
 ## BGR Circuit
 ![image](https://user-images.githubusercontent.com/110395336/217156197-c168f612-c3e4-4d4c-894c-5d401b23509f.png)
 
+## Specifications
+![image](https://user-images.githubusercontent.com/110395336/220180515-c46e836c-e1ba-4702-b387-8d3ee76fa44c.png)
 
 
 
