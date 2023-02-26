@@ -12,7 +12,7 @@ This github repository is for the design of a Band Gap Reference Circuit (BGR)
 ### Voltages at specified nodes
 ![Screenshot from 2023-02-16 18-32-48](https://user-images.githubusercontent.com/110395336/219569518-8334296d-4fc3-4b4d-a558-8a0d21ad1a74.png)
 
-### Current and voltages are almost identical
+### Current and voltages are almost identical(Basic current mirror circuit)
 ![Screenshot from 2023-02-16 18-30-36](https://user-images.githubusercontent.com/110395336/219568660-ae96dfca-46f5-4547-8f45-985732404bcc.png)
 ## PTAT
 ### PTAT using V2 and VD dependent
@@ -23,15 +23,40 @@ This github repository is for the design of a Band Gap Reference Circuit (BGR)
 ![Screenshot from 2023-02-16 18-44-40](https://user-images.githubusercontent.com/110395336/219570326-ee6e5f52-a74a-4f53-8f07-6c7a86dc6ab9.png)
 ## BGR Vref
 ![Screenshot from 2023-02-16 22-13-20](https://user-images.githubusercontent.com/110395336/219570854-853a12de-ec89-4ec6-ace7-29cf4e954ff5.png)
-### CTAT and PTAT cancelling each other to maintain voltage unchanged with respect to temperature
+### CTAT and PTAT cancelling each other to maintain voltage unchanged with respect to temperature(Basic Current mirror)
 ![Screenshot from 2023-02-16 21-16-43](https://user-images.githubusercontent.com/110395336/219571021-c8bedc9c-a021-4212-a437-855de57815ae.png)
 ![Screenshot from 2023-02-16 21-17-05](https://user-images.githubusercontent.com/110395336/219571053-be63ac6e-b7fd-4c96-bd65-9b5802e4f8ad.png)
 ### Building a start up circuit to keep current mirror in active state
 ![Screenshot from 2023-02-16 22-29-40](https://user-images.githubusercontent.com/110395336/219571444-dd578eee-23dc-4bfa-9e04-b1c8eebc9ef1.png)
+## BGR Circuit
+![image](https://user-images.githubusercontent.com/110395336/217156197-c168f612-c3e4-4d4c-894c-5d401b23509f.png)
 ### Temperature coeffecient
 ![Screenshot from 2023-02-16 23-02-55](https://user-images.githubusercontent.com/110395336/219571528-bb2c1857-88e9-4552-b025-795827dd8ba5.png)
 ### Voltage coeffecient
 ![Screenshot from 2023-02-16 23-25-56](https://user-images.githubusercontent.com/110395336/219571578-ba3cd981-8cc0-448b-b79c-59b129a5a349.png)
+
+## BGR Circuit with Enable and Cascode current mirror circuit
+![Screenshot from 2023-02-25 19-08-47](https://user-images.githubusercontent.com/110395336/221416175-172abef6-1305-47c4-b53d-085abd59010f.png)
+
+### Current and voltages are  identical for Cascode current mirror circuit
+![Screenshot from 2023-02-26 00-56-52](https://user-images.githubusercontent.com/110395336/221415823-c2544cf6-53e8-4f6c-bb6c-e5e10d517325.png)
+
+### PTAT and CTAT Cancelling each other to give constant Voltage (Vref) using Cascode current mirror circuit.
+![Screenshot from 2023-02-25 23-46-59](https://user-images.githubusercontent.com/110395336/221415953-827bcf54-dcf1-47dd-94d4-d581bd71017e.png)
+### Voltage variation w.r.to temperature(Cascode)
+![Screenshot from 2023-02-25 23-46-37](https://user-images.githubusercontent.com/110395336/221415997-87af5d3b-3013-4c41-b7b8-861a09544b18.png)
+### Voltage variation w.r.to VDD(Cascode)
+![Screenshot from 2023-02-25 23-46-10](https://user-images.githubusercontent.com/110395336/221416036-c0f3f375-0a28-4979-8091-1b74fb5b164b.png)
+### Temperature coeffecient
+![Screenshot from 2023-02-26 00-08-51](https://user-images.githubusercontent.com/110395336/221416075-7db48ec5-e4ee-449b-9535-931a5822a222.png)
+### Voltage coeffecient
+![Screenshot from 2023-02-26 00-23-22](https://user-images.githubusercontent.com/110395336/221416213-a0fcf14e-2d5a-4db3-87b7-f1aaf8c81cc0.png)
+### Start-Up time 
+![Screenshot from 2023-02-26 00-32-57](https://user-images.githubusercontent.com/110395336/221416267-f6c05575-c1ec-45b0-ae65-541bc37e75b2.png)
+### On-Off current wrt to Enable
+![Screenshot from 2023-02-26 00-52-14](https://user-images.githubusercontent.com/110395336/221416308-c5ce261c-ec1a-4eb4-a63f-c679bad99fd9.png)
+
+
 
 
 ## BGR Circuit
@@ -39,6 +64,7 @@ This github repository is for the design of a Band Gap Reference Circuit (BGR)
 
 ## Specifications
 ![image](https://user-images.githubusercontent.com/110395336/220198781-10eccdc2-7c2e-4e6f-b70e-a5dc29806d06.png)
+
 
 
 
