@@ -1,35 +1,94 @@
-# msvsdbgr
-This github repository is for the design of a Band Gap Reference Circuit (BGR)
+# BGR
+This github repository is for the design of a Band Gap Reference Circuit (BGR) using SCL_130nm technology PDK.
+## Introduction to BGR
+The Bandgap Reference (BGR) is a circuit which provides a stable voltage output which is independent of factors like temperature, supply voltage.
 
-## CTAT
-![Screenshot from 2023-02-16 11-50-54](https://user-images.githubusercontent.com/110395336/219567226-2ffe197c-dde9-4366-bf4f-f0e3fdaeb496.png)
-### Voltage variation w.r.to temperature
-![Screenshot from 2023-02-16 11-44-13](https://user-images.githubusercontent.com/110395336/219567666-87c50116-048f-4ace-9f7c-836a0ce38c26.png)
-### Slope of the Curve
-![Screenshot from 2023-02-16 11-49-05](https://user-images.githubusercontent.com/110395336/219568214-1b8ed17f-cdf1-447f-b81c-4c7d825e4469.png)
-### Function of CTAT using basic current mirror circuit
-![Screenshot from 2023-02-16 17-54-39](https://user-images.githubusercontent.com/110395336/219568471-1c4d1311-f62f-4370-84fd-12b423892318.png)
-### Voltages at specified nodes
-![Screenshot from 2023-02-16 18-32-48](https://user-images.githubusercontent.com/110395336/219569518-8334296d-4fc3-4b4d-a558-8a0d21ad1a74.png)
+<img src="https://user-images.githubusercontent.com/110395336/221423844-50e88725-12dd-41e7-94af-d79a8e0f0e89.png" width="500" /> <img src="https://user-images.githubusercontent.com/110395336/221424115-dc0d6de7-a55b-470a-bcce-c31bdddd4d5a.png" width="500" />
+
+## Features of Bandgap reference
+1.  Temperature stability: A bandgap reference is designed to provide a stable reference voltage over a wide range of temperatures. This is achieved by using the temperature-dependent properties of semiconductors to cancel out the temperature dependence of other components in the circuit.
+2. Low noise: A bandgap reference should have low noise to prevent any fluctuations in the reference voltage. This is achieved by using high-quality components and careful design.
+3. High accuracy: A bandgap reference should have a high accuracy and precision to ensure that the reference voltage is consistent over time.
+4. Low output impedance: A bandgap reference should have a low output impedance to provide a stable output voltage even when connected to a load.
+5. Low power consumption: A bandgap reference should consume low power to minimize the impact on the overall system power consumption.
+6. Wide input voltage range: A bandgap reference should be able to operate over a wide range of input voltages to ensure compatibility with different systems.
+7. Small size: A bandgap reference should be compact in size to be easily integrated into different electronic systems.
+
+## Why BGR and its Aplications
+A bandgap reference is a circuit that uses the difference in voltage between the base-emitter junction and the semiconductor's bandgap voltage to produce a constant voltage reference that is unaffected by changes in temperature or power supply. Bandgap references are often used in the following contexts:
+* Voltage regulation: Bandgap references are a reliable voltage reference that can be used in voltage regulators to control the output voltage of the regulator.
+* Analog-to-digital converters (ADCs): ADCs require a stable and accurate voltage reference to convert analog signals into digital signals. Bandgap references can provide a stable reference voltage for ADCs.
+* Voltage-controlled oscillators (VCOs): VCOs are used in frequency synthesizers, phase-locked loops, and other applications where a stable and accurate frequency is required. Bandgap references can be used to provide a stable reference voltage for the VCOs.
+* Power management: Bandgap references can be used in power management applications such as battery chargers and power supplies to provide a stable voltage reference for controlling the output voltage.
+* Temperature sensors: Bandgap references can be used in temperature sensors to provide a stable reference voltage that is independent of temperature variations.
+* Digital-to-analog converters (DACs): DACs require a stable and accurate voltage reference to convert digital signals into analog signals. Bandgap references can provide a stable reference voltage for DACs.
+
+# BGR Introduction
+## BGR Principle
+The operation principle of BGR circuits is to sum a voltage with negative temprature coefficient with another one exhibiting opposite temperature dependancies. Generally semiconductor diode behave as CTAT i.e. Complement to absolute temp. which means with increase in temp. the voltage across the diode will decrease. So we need to find a PTAT circuit which can cancel out the CTAT nature i.e. with rise in temp. the voltage across that device will increase and thus we can get a constant voltage reference with respect to temp.
+![image](https://user-images.githubusercontent.com/110395336/221425027-257a0ffa-1c41-4975-a2c7-e905343ebcfa.png)
+### CTAT voltage generation
+CTAT (Temperature Coefficient of Absolute Temperature) voltage generation is a technique used to generate a voltage that is proportional to the absolute temperature. The CTAT voltage is typically generated using a diode or a transistor.One important consideration when designing a CTAT voltage generator is the temperature coefficient of the diode or transistor used in the circuit. The temperature coefficient determines how much the voltage across the diode or transistor will change with temperature, and it is important to choose a diode or transistor with a temperature coefficient that matches the desired temperature range of the circuit.
+
+![image](https://user-images.githubusercontent.com/110395336/221425678-8f0c846d-2c72-4b12-b51f-71e797c786ab.png)
+![image](https://user-images.githubusercontent.com/110395336/221425684-a25ee02c-d1df-47ee-a4fb-e1fbde26f148.png)
+
+#### CTAT Voltage generation circuit
+![image](https://user-images.githubusercontent.com/110395336/221425895-8a52140c-0c1b-4142-827d-f99a34d9e8e3.png)
+
+#### Voltage variation w.r.to temperature
+![image](https://user-images.githubusercontent.com/110395336/221425933-889ffb88-7e2d-4f29-a114-ae48008fc37c.png)
+
+#### Slope of the Curve
+![image](https://user-images.githubusercontent.com/110395336/221426000-c29f2b6e-1b29-4b4e-8679-a056988503b4.png)
+#### Function of CTAT using basic current mirror circuit
+![image](https://user-images.githubusercontent.com/110395336/221426059-3c57fa78-8d2c-4413-9b49-60a10d99a178.png)
+#### Voltages at specified nodes
+![image](https://user-images.githubusercontent.com/110395336/221426083-2df543b5-d632-4aae-a770-1bf3e2835907.png)
 
 ### Current and voltages are almost identical(Basic current mirror circuit)
-![Screenshot from 2023-02-16 18-30-36](https://user-images.githubusercontent.com/110395336/219568660-ae96dfca-46f5-4547-8f45-985732404bcc.png)
-## PTAT
+![image](https://user-images.githubusercontent.com/110395336/221426110-3a598091-0e7d-4d67-93f3-e1dd2dcbc064.png)
+### PTAT voltage generation
+PTAT stands for Proportional To Absolute Temperature and refers to a voltage or current that is proportional to the absolute temperature of a device or system. PTAT voltage generation is a technique used in electronic circuits to generate a voltage that is proportional to temperature. The PTAT voltage is typically generated by exploiting the temperature-dependent characteristics of a transistor or diode.In a typical PTAT voltage generator circuit, a transistor or diode is used as a temperature sensor. The voltage across the sensor is amplified and then fed into a voltage divider network to produce a voltage that is proportional to the absolute temperature of the sensor. 
+![image](https://user-images.githubusercontent.com/110395336/221426595-83907cd3-a7ee-4a9e-8c36-77d9ee9501d3.png)
+![image](https://user-images.githubusercontent.com/110395336/221426606-1eaa223d-204f-4edd-8fe9-984de0263e69.png)
+
+
 ### PTAT using V2 and VD dependent
-![Screenshot from 2023-02-16 18-43-13](https://user-images.githubusercontent.com/110395336/219569989-8c5ec124-619d-439e-948c-584485e22211.png)
-### Realising PTAT independently
-![Screenshot from 2023-02-16 18-44-45](https://user-images.githubusercontent.com/110395336/219570200-7649423a-16a9-462a-bfd7-0b3611bcc120.png)
-### Voltage variation w.r.to temperature
-![Screenshot from 2023-02-16 18-44-40](https://user-images.githubusercontent.com/110395336/219570326-ee6e5f52-a74a-4f53-8f07-6c7a86dc6ab9.png)
+![image](https://user-images.githubusercontent.com/110395336/221426704-fdde34d2-e2c1-4fec-9e9f-6d2c8a124664.png)
+### Realising PTAT voltage variation circuit independently
+![image](https://user-images.githubusercontent.com/110395336/221426729-1aa2810e-eecb-44bb-a861-7c11a7178ab5.png)
+### PTAT Voltage variation w.r.to temperature
+![image](https://user-images.githubusercontent.com/110395336/221426775-cd69abb1-7bd6-485d-9620-c6becdcef0ce.png)
+#### Self-Biased Current Mirror Circuit
+A self-biased current mirror circuit is a type of electronic circuit used in integrated circuits to replicate an input current to an output current with a high degree of accuracy. In a self-biased current mirror circuit, the bias current for the circuit is generated internally, eliminating the need for an external bias voltage.
+The circuit typically consists of two transistors - a master transistor and a slave transistor - and a resistor. The master transistor is biased with a fixed current, and the slave transistor is biased using the voltage drop across the resistor. As a result, the output current of the slave transistor is a mirror image of the input current to the master transistor.
+![image](https://user-images.githubusercontent.com/110395336/221427036-e5da7603-c07f-495a-b973-80eac68f5bee.png)
+### Reference Branch Circuit
+The reference circuit branch performs the addition of CTAT and PTAT volages and gives the final reference voltage. We are using a mirror transitor and a BJT as diode in the reference branch. By virtue of the mirror transistor in the reference branch the same amount of current flows through it as of the current mirror branches. Now from the PTAT circuit branch we are getting PTAT voltage and PTAT current. The same PTAT current is flowing in the reference branch. But the slope of PTAT voltage is much more smaller than that of slope of CTAT voltgae. In order to make increase the voltage slope we have to increase the resistance (current constant, so V increases with increase in R). Now across the high resistance we will get our constant reference voltage which is the result of CTAT Voltage + PTAT Voltage.
+
 ## BGR Vref
-![Screenshot from 2023-02-16 22-13-20](https://user-images.githubusercontent.com/110395336/219570854-853a12de-ec89-4ec6-ace7-29cf4e954ff5.png)
+![image](https://user-images.githubusercontent.com/110395336/221430814-44df1bc2-a8d3-40b4-ad54-0e6a778b6a25.png)
+
+![image](https://user-images.githubusercontent.com/110395336/221427149-b16509cd-1d02-4ade-b01c-d139e60d9fd5.png)
+![image](https://user-images.githubusercontent.com/110395336/221427157-d59224b9-66b2-4b2e-bde5-02d31fff65a2.png)
+
+
 ### CTAT and PTAT cancelling each other to maintain voltage unchanged with respect to temperature(Basic Current mirror)
 ![Screenshot from 2023-02-16 21-16-43](https://user-images.githubusercontent.com/110395336/219571021-c8bedc9c-a021-4212-a437-855de57815ae.png)
-![Screenshot from 2023-02-16 21-17-05](https://user-images.githubusercontent.com/110395336/219571053-be63ac6e-b7fd-4c96-bd65-9b5802e4f8ad.png)
+
 ### Building a start up circuit to keep current mirror in active state
 ![Screenshot from 2023-02-16 22-29-40](https://user-images.githubusercontent.com/110395336/219571444-dd578eee-23dc-4bfa-9e04-b1c8eebc9ef1.png)
-## BGR Circuit
+### Start-up circuit
+The start-up circuit is required to move out the self biased current mirror from degenerative bias point (zero current). The start-up circuit forecefully flows a slow amount of current through the self-biased current mirror when the current is 0 in the current mirror branches, as the current mirror is self biased this small current creats a disturbance and the current mirror auto biased to the desired current value.
+![image](https://user-images.githubusercontent.com/110395336/221431106-61fb5c7b-562c-4f5b-b065-290e5567e2e9.png)
+
+## Complete BGR Circuit
+Now by connecting all above components we can get the complete BGR circuit.
 ![image](https://user-images.githubusercontent.com/110395336/217156197-c168f612-c3e4-4d4c-894c-5d401b23509f.png)
+![image](https://user-images.githubusercontent.com/110395336/221431437-9cfd5f94-aba1-4f6c-a542-f5477a9b7b7b.png)
+### Voltage(Vref) variation wrt temperature
+![Screenshot from 2023-02-16 21-17-05](https://user-images.githubusercontent.com/110395336/219571053-be63ac6e-b7fd-4c96-bd65-9b5802e4f8ad.png)
 ### Temperature coeffecient
 ![Screenshot from 2023-02-16 23-02-55](https://user-images.githubusercontent.com/110395336/219571528-bb2c1857-88e9-4552-b025-795827dd8ba5.png)
 ### Voltage coeffecient
