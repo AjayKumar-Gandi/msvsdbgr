@@ -244,7 +244,7 @@ Now by connecting all above components we can get the complete BGR circuit.
 ## 9. Specifications
 <br>
 <p align='center'>
-<img src='https://user-images.githubusercontent.com/110395336/221602088-d03c24f2-9e39-4a41-9ee9-29e10348f791.png'width="1000"/>
+<img src='https://user-images.githubusercontent.com/110395336/221602088-d03c24f2-9e39-4a41-9ee9-29e10348f791.png'width="900"/>
 </p>
 
 
