@@ -25,11 +25,12 @@ A bandgap reference is a circuit that uses the difference in voltage between the
 
 
 # Table of contents
+<details>
 <summary>How do I dropdown?</summary>
 <br>
 This is how you dropdown.
 </details>
-
+     <details>
  - <summary>[1.BGR Introduction](#1-BGR-Introduction)</summary>
    <br>
      - [1.1 BGR Principle](#11-BGR-Principle)
