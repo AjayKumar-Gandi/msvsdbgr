@@ -25,8 +25,15 @@ A bandgap reference is a circuit that uses the difference in voltage between the
 
 
 # Table of contents
- - [1.BGR Introduction](#1-BGR-Introduction)
+<summary>How do I dropdown?</summary>
+<br>
+This is how you dropdown.
+</details>
+
+ - <summary>[1.BGR Introduction](#1-BGR-Introduction)</summary>
+   <br>
      - [1.1 BGR Principle](#11-BGR-Principle)
+   </details>
  - [2.CTAT voltage generation](#2-CTAT-voltage-generation)
      - [2.1 CTAT Voltage generation circuit](#21-CTAT-Voltage-generation-circuit)
      - [2.2 Voltage variation w.r.to temperature](#22-Voltage-variation-w.r.to-temperature)
