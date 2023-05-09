@@ -58,7 +58,9 @@ A bandgap reference is a circuit that uses the difference in voltage between the
     - [8.12 On-Off current wrt to Enable](#812-On-Off-current-wrt-to-Enable)
     - [8.11 Customizing the layout](#86-Customizing-the-layout)
     - [8.6 Customizing the layout](#86-Customizing-the-layout)
- - [9.Specifications](#9-Specifications)
+ - [9. Specifications](#9-Specifications)
+ - [10. Layout](#10-Layout)
+ - [11. Future Work](#10-Future-Work)
 
 ## 1. BGR Introduction
 ### 1.1 BGR Principle
@@ -247,9 +249,36 @@ Now by connecting all above components we can get the complete BGR circuit.
 <img src='https://user-images.githubusercontent.com/110395336/221602088-d03c24f2-9e39-4a41-9ee9-29e10348f791.png'width="900"/>
 </p>
 
+## 10. Layout
+<br>
+<p align='center'>
+<img src='https://github.com/AjayKumar-Gandi/msvsdbgr/assets/110395336/087aaa18-12c9-4415-9c74-aede432b3d7f.png'width="900"/>
+</p>
+<br>
+<h4> Zoomed-In View of Layout </h4>
+<p align='center'>
+<img src='https://github.com/AjayKumar-Gandi/msvsdbgr/assets/110395336/0f9bcfdc-b2fa-4aa4-b761-7ec8ccc3b067.png'width="900"/>
+</p>
+<br>
+<p align='center'>
+<img src='https://github.com/AjayKumar-Gandi/msvsdbgr/assets/110395336/33c8a901-e354-4447-b193-c92a90bf5848.png'width="900"/>
+</p>
+<br>
+<p align='center'>
+<img src='https://github.com/AjayKumar-Gandi/msvsdbgr/assets/110395336/685ca6a4-f287-4b9e-ae57-de3faaaa7912.png'width="900"/>
+</p>
+<br>
+<p align='center'>
+<img src='https://github.com/AjayKumar-Gandi/msvsdbgr/assets/110395336/34f6c2d4-89d2-47f5-aba7-6297c692c522.png'width="900"/>
+</p>
+<br>
+<p align='center'>
+<img src='https://github.com/AjayKumar-Gandi/msvsdbgr/assets/110395336/1e37199f-c879-4bd4-9ab4-89ee9180d78b.png'width="900"/>
+</p>
 
+## 11. Future Work
 
-
+- Perform post layout simulation 
 
 
 
