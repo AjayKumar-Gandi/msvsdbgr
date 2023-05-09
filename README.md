@@ -60,7 +60,7 @@ A bandgap reference is a circuit that uses the difference in voltage between the
     - [8.6 Customizing the layout](#86-Customizing-the-layout)
  - [9. Specifications](#9-Specifications)
  - [10. Layout](#10-Layout)
- - [11. Future Work](#10-Future-Work)
+ - [11. Future Work](#11-Future-Work)
 
 ## 1. BGR Introduction
 ### 1.1 BGR Principle
