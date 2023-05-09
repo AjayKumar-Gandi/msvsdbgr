@@ -1,0 +1,64 @@
+// Generated for: spectre
+// Generated on: May  9 12:08:35 2023
+// Design library name: Bandgap
+// Design cell name: Bandgap_sch
+// Design view name: schematic
+simulator lang=spectre
+global 0
+include "/mnt/cadence_tools/gpdk045_v_6_0/gpdk045/../models/spectre/gpdk045.scs" section=mc
+
+// Library name: Bandgap
+// Cell name: Bandgap_sch
+// View name: schematic
+M14 (net6 net10 VDD VDD) p18 w=28 l=1 as=0.1984 ad=0.1984 ps=1.88 pd=1.88 \
+        m=1
+M13 (net10 net10 VDD VDD) p18 w=28 l=1 as=0.1984 ad=0.1984 ps=1.88 pd=1.88 \
+        m=1
+M12 (net3 net10 VDD VDD) p18 w=28 l=1 as=0.1984 ad=0.1984 ps=1.88 pd=1.88 \
+        m=1
+M25 (en\-bar en net1 net1) p18 w=0.48 l=0.18 as=0.1984 ad=0.1984 ps=1.88 \
+        pd=1.88 m=3
+M16 (net2 net10 VDD VDD) p18 w=12 l=1 as=0.1984 ad=0.1984 ps=1.88 pd=1.88 \
+        m=1
+M28 (vref net5 net6 VDD) p18 w=28 l=1 as=0.1984 ad=0.1984 ps=1.88 pd=1.88 \
+        m=1
+M20 (net11 net5 net3 VDD) p18 w=28 l=1 as=0.1984 ad=0.1984 ps=1.88 pd=1.88 \
+        m=1
+M15 (net11 net2 net13 VDD) p18 w=12 l=0.8 as=0.1984 ad=0.1984 ps=1.88 \
+        pd=1.88 m=1
+M21 (net5 net5 net10 VDD) p18 w=28 l=1 as=0.1984 ad=0.1984 ps=1.88 pd=1.88 \
+        m=1
+M11 (net11 net11 Volt1 0) n18 w=14 l=1 as=0.1984 ad=0.1984 ps=1.88 pd=1.88 \
+        m=1
+M10 (net5 net11 Volt2 0) n18 w=14 l=1 as=0.1984 ad=0.1984 ps=1.88 pd=1.88 \
+        m=1
+M24 (net13 en net5 0) n18 w=2 l=2 as=0.1984 ad=0.1984 ps=1.88 pd=1.88 m=1
+M18 (net2 net2 net4 0) n18 w=1 l=3 as=0.1984 ad=0.1984 ps=1.88 pd=1.88 m=1
+M23 (net12 net12 0 0) n18 w=1 l=3 as=0.1984 ad=0.1984 ps=1.88 pd=1.88 m=1
+M27 (net11 en\-bar 0 0) n18 w=8 l=1 as=0.1984 ad=0.1984 ps=1.88 pd=1.88 \
+        m=1
+M26 (en\-bar en 0 0) n18 w=0.48 l=0.18 as=0.1984 ad=0.1984 ps=1.88 pd=1.88 \
+        m=1
+M19 (net4 net4 net12 0) n18 w=1 l=3 as=0.1984 ad=0.1984 ps=1.88 pd=1.88 \
+        m=1
+R6 (vref CTAT) resistor r=88.32K
+R3 (Volt2 v2) resistor r=9K
+R5 (vref 0) resistor r=100M
+Q5 (0 0 CTAT) vd10 m=8
+Q4 (0 0 Volt1) vd10 m=1
+Q3 (0 0 v2) vd10 m=8
+V4 (VDD 0) vsource dc=3.3 type=dc
+V3 (net1 0) vsource dc=3.3 type=dc
+V0 (en 0) vsource dc=3.3 type=pulse val0=0 val1=3.3 period=10u rise=1u \
+        fall=1u width=5u
+simulatorOptions options psfversion="1.4.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 \
+    maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub
