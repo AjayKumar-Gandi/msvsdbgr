@@ -252,7 +252,7 @@ Now by connecting all above components we can get the complete BGR circuit.
 ## 10. Layout
 Band Gap Reference Circuit (BGR) Layout
 <p align='center'>
-![Screenshot from 2023-05-10 12-56-25](https://github.com/AjayKumar-Gandi/msvsdbgr/assets/110395336/08ec74f3-41e6-46e3-8f11-7fe6484b3d99)  
+<img src= 'https://github.com/AjayKumar-Gandi/msvsdbgr/assets/110395336/08ec74f3-41e6-46e3-8f11-7fe6484b3d99.png' />  
 </p>
 <br>
 <h4> Zoomed-In View of Layout </h4>
