@@ -254,14 +254,17 @@ Band Gap Reference Circuit (BGR) Layout
 
 VLSI layout combines a huge number of circuits into a larger integrated circuit. There are 2 ways of doing a layout: manual and automated.  Manual layout usually enables the designer to pack his devices in a smaller area compared to the automated process but it is more tedious.  The automated process, on the other hand, is done using standard cells and usually takes more real estate space but it is much faster.  
 The design rules which we will be using is the  SCL 130nm CMOS Rules. Design rules give guidelines for generating layouts. They dictate spacings between wells, sizes of contacts, minimum spacing beween a poly and a metal and many other similar rules. 
+
 <p align='center'>
 <img src= 'https://github.com/AjayKumar-Gandi/msvsdbgr/assets/110395336/08ec74f3-41e6-46e3-8f11-7fe6484b3d99.png' />  
 </p>
-<br>
+
+
 <h4> Design of PNP (BJT) </h4>
 <p align='center'>
 <img src='https://github.com/AjayKumar-Gandi/msvsdbgr/assets/110395336/85f0dfac-7b9a-4e93-9dbc-fec5ad592ee7.png' />
 </p>
+
 <br>
 <p align='center'>
 <img src='https://github.com/AjayKumar-Gandi/msvsdbgr/assets/110395336/f8f5ef09-494e-4e05-a4f2-a4e7f68b8727.png' />
