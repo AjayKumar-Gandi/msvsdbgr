@@ -250,37 +250,60 @@ Now by connecting all above components we can get the complete BGR circuit.
 </p>
 
 ## 10. Layout
-Band Gap Reference Circuit (BGR) Layout
+Band Gap Reference Circuit (BGR) Layout  
+
+VLSI layout combines a huge number of circuits into a larger integrated circuit. There are 2 ways of doing a layout: manual and automated.  Manual layout usually enables the designer to pack his devices in a smaller area compared to the automated process but it is more tedious.  The automated process, on the other hand, is done using standard cells and usually takes more real estate space but it is much faster.  
+The design rules which we will be using is the  SCL 130nm CMOS Rules. Design rules give guidelines for generating layouts. They dictate spacings between wells, sizes of contacts, minimum spacing beween a poly and a metal and many other similar rules. 
 <p align='center'>
 <img src= 'https://github.com/AjayKumar-Gandi/msvsdbgr/assets/110395336/08ec74f3-41e6-46e3-8f11-7fe6484b3d99.png' />  
 </p>
 <br>
-<h4> Zoomed-In View of Layout </h4>
+<h4> Design of PNP (BJT) </h4>
 <p align='center'>
-<img src='https://github.com/AjayKumar-Gandi/msvsdbgr/assets/110395336/0f9bcfdc-b2fa-4aa4-b761-7ec8ccc3b067.png'width="900"/>
+<img src='https://github.com/AjayKumar-Gandi/msvsdbgr/assets/110395336/85f0dfac-7b9a-4e93-9dbc-fec5ad592ee7.png' />
 </p>
 <br>
 <p align='center'>
-<img src='https://github.com/AjayKumar-Gandi/msvsdbgr/assets/110395336/33c8a901-e354-4447-b193-c92a90bf5848.png'width="900"/>
+<img src='https://github.com/AjayKumar-Gandi/msvsdbgr/assets/110395336/f8f5ef09-494e-4e05-a4f2-a4e7f68b8727.png' />
+</p>
+<br>
+<h4> Transistor in Layout View </h4>
+<p align='center'>
+<img src='https://github.com/AjayKumar-Gandi/msvsdbgr/assets/110395336/1c1c5865-ce54-44ed-aea4-5882c1f19cba.png' />
 </p>
 <br>
 <p align='center'>
-<img src='https://github.com/AjayKumar-Gandi/msvsdbgr/assets/110395336/685ca6a4-f287-4b9e-ae57-de3faaaa7912.png'width="900"/>
+<img src='https://github.com/AjayKumar-Gandi/msvsdbgr/assets/110395336/26c58b54-b423-42b1-960f-0e467bc09341.png' />
 </p>
 <br>
-<p align='center'>
-<img src='https://github.com/AjayKumar-Gandi/msvsdbgr/assets/110395336/34f6c2d4-89d2-47f5-aba7-6297c692c522.png'width="900"/>
-</p>
 <br>
 <p align='center'>
-<img src='https://github.com/AjayKumar-Gandi/msvsdbgr/assets/110395336/1e37199f-c879-4bd4-9ab4-89ee9180d78b.png'width="900"/>
+<img src='https://github.com/AjayKumar-Gandi/msvsdbgr/assets/110395336/3f44947d-daeb-499b-bc31-a8d498113444.png' />
 </p>
+<br>
+
 
 ## 11. Future Work
 
 - Perform post layout simulation 
 
+## Author
 
+Gandi AjayKumar
+
+## Acknowledgement
+
+- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
+- Madhav Rao, Professor, IIIT-Bangalore.
+- Nanditha Rao, Professor, IIIT-Bangalore.
+- Semi-conductor Laboratory
+
+## Contact Information
+
+ - Gandi AjayKumar, M.Tech in VLSI Design, International Institute of Information Technology, Bangalore ajaykumar.gandi@iiitb.ac.in.
+ - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. kunalghosh@gmail.com
+ - Madhav Rao, Professor, IIIT-Bangalore. mr@iiitb.ac.in
+ - Nanditha Rao, Professor, IIIT-Bangalore. nanditha.rao@iiitb.ac.in
 
 
 
