@@ -234,7 +234,7 @@ Now by connecting all above components we can get the complete BGR circuit.
 ### 8.11 Start-Up time 
 <br>
 <p align='center'>
-<img src='https://user-images.githubusercontent.com/110395336/221416267-f6c05575-c1ec-45b0-ae65-541bc37e75b2.png'width="1000"/>
+<![Screenshot from 2023-05-10 12-56-25](https://github.com/AjayKumar-Gandi/msvsdbgr/assets/110395336/a4a896e5-d251-4d6a-8686-34dbd3c1e25f)>
 </p>
 
 ### 8.12 On-Off current wrt to Enable
